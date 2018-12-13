@@ -1,7 +1,7 @@
 name: Darkula
-author: Maxinde Krebs
+author: Maxine Krebs
 maintainers:
-  - Derek P Sifford <dereksifford@gmail.com>
+  - Maxine Krebs <krebs.maxine@gmail.com>
 semanticClass: theme.darkula
 darkula:
   base:
