@@ -1,6 +1,6 @@
 ## How to contribute
 
-1. Fork and clone this repo. `git clone https://github.com/<YOUR-USERNAME>/visual-studio-code`
+1. Fork and clone this repo. `git clone https://github.com/<YOUR-USERNAME>/darkula`
 2. Create a branch for your changes. `git checkout -b my-new-feature`
 3. Install dependencies. `yarn`
 4. Attach your clone to visual studio code. `yarn attach`

@@ -5,7 +5,7 @@ const fsp = require('./fsp');
 const loadThemes = require('./loadThemes');
 
 const THEME_DIR = path.join(__dirname, '..', 'theme');
-const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'dracula.yml');
+const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'darkula.yml');
 
 function toJSON(theme) {
     return JSON.stringify(theme, null, 4);
@@ -16,12 +16,10 @@ function toJSON(theme) {
         await fsp.mkdir(THEME_DIR);
     }
 
-    const { standardTheme, softTheme } = await loadThemes(THEME_YAML_FILE);
-    const standardThemePath = path.join(THEME_DIR, 'dracula.json');
-    const softThemePath = path.join(THEME_DIR, 'dracula-soft.json');
+    const standardTheme = await loadThemes(THEME_YAML_FILE);
+    const standardThemePath = path.join(THEME_DIR, 'darkula.json');
 
     await Promise.all([
-        fsp.writeFile(standardThemePath, toJSON(standardTheme)),
-        fsp.writeFile(softThemePath, toJSON(softTheme)),
+        fsp.writeFile(standardThemePath, toJSON(standardTheme))
     ]);
 })();

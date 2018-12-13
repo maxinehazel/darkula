@@ -23,7 +23,7 @@ const NOT_THEME_KEYS = [
     'editor.tokenColorCustomizations',
 ];
 
-const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'dracula.yml');
+const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'darkula.yml');
 
 async function scrapeThemeAvailableKeys() {
     const data = await get(THEME_COLOR_REFERENCE_URL);

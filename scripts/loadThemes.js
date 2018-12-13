@@ -11,13 +11,13 @@ async function loadTheme(yamlFilePath) {
     const softThemeYAML = getSoftThemeYAML(standardThemeYAML, standardTheme);
     const softTheme = await loadYAML(softThemeYAML);
 
-    return { standardTheme, softTheme };
+    return softTheme;
 }
 
 function getSoftThemeYAML(fileContent, standardTheme) {
     const brightColors = [
-        ...standardTheme.dracula.ansi,
-        ...standardTheme.dracula.brightOther,
+        ...standardTheme.darkula.ansi,
+        ...standardTheme.darkula.brightOther,
     ];
 
     return fileContent.replace(/#[0-9A-F]{6}/g, color => {

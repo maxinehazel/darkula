@@ -1,11 +1,11 @@
-name: Dracula
-author: Zeno Rocha
+name: Darkula
+author: Maxinde Krebs
 maintainers:
   - Derek P Sifford <dereksifford@gmail.com>
-semanticClass: theme.dracula
-dracula:
+semanticClass: theme.darkula
+darkula:
   base:
-    - &BG        '#282A36'
+    - &BG        '#000000'
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
@@ -44,7 +44,7 @@ dracula:
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
     - &BGLighter     '#424450'
-    - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
+    - &BGLight       '#262626' # HSV (230   , 25.71, 27.45)
     - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
     - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
 
