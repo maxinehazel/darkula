@@ -1,6 +1,6 @@
 {
 	"name": "theme-darkula",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"displayName": "darkula",
 	"homepage": "https://darkulatheme.com/",
 	"description": "A Fork of Dracula Theme to be made DARKER",
@@ -13,14 +13,14 @@
 		"eject": "node ./scripts/bootstrap.js eject",
 		"package": "vsce package -o ./bin/darkula.vsix",
 		"vscode:prepublish": "npm run build"
-  },
-  "maintainers": [
-    "Maxine Krebs <krebs.maxine@gmail.com>"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:maxinekrebs/darkula.git"
-  },
+	},
+	"maintainers": [
+		"Maxine Krebs <krebs.maxine@gmail.com>"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:maxinekrebs/darkula.git"
+	},
 	"engines": {
 		"vscode": "^1.13.0"
 	},
